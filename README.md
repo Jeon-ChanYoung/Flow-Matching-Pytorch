@@ -1,3 +1,10 @@
-# Flow-Matching-MNIST
-Let's implement Flow Matching on MNIST in a very simple way using PyTorch and a lightweight UNet-style backbone.
-To make the code easy to read and understand, this project leaves out more complex parts often used in larger models (like self-attention layers or very deep UNet structures) and focuses only on the essentials.  
+# Flow-Matching-Pytorch
+Let’s briefly reconstruct images using the Flow Matching algorithm.
+We use datasets such as the MNIST digit dataset (shape: 1x28x28) and a pixel art dataset (shape: 3x16x16).
+
+## Result  
+<img src="assets/real_vs_generated.png" alt="Real vs Generated" />
+
+<br>
+
+<img src="assets/denoising.gif" alt="Denoising Process" />
