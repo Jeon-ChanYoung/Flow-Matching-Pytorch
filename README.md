@@ -1,5 +1,5 @@
 # Flow-Matching-Pytorch
-Let's build an ultra-lightweight generative model using the “Flow Matching” algorithm. Our goal is perfect reconstruction, and we'll see how well it restores fine details through the denoising process. We use a pixel art dataset (shape: 3x16x16).  
+Let's build an lightweight generative model using the “Flow Matching” algorithm. Our goal is perfect reconstruction, and we'll see how well it restores fine details through the denoising process. We use a pixel art dataset (shape: 3x16x16).  
 
 There are two versions. One is the basic Flow Matching, and the other is a version with various techniques added.  
 <br> 
