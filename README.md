@@ -1,7 +1,7 @@
 # Flow-Matching-Pytorch
 Let's build an lightweight generative model using the “Flow Matching” algorithm. Our goal is perfect reconstruction, and we'll see how well it restores fine details through the denoising process. We use a pixel art dataset (shape: 3x16x16).  
   
-There are currently four versions available. You can view them as ipynb files, and pre-trained pth files can be downloaded from the Releases.  
+There are currently five versions available. You can view them as ipynb files, and pre-trained pth files can be downloaded from the Releases.  
 
 - Flow Matching Basic
 - Flow Matching Enhanced
