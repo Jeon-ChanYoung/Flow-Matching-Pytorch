@@ -38,7 +38,7 @@ The Enhanced version incorporates the following improvements over the previous v
 <br>
 
 ## Latent Flow Matching  
-Rather than working in pixel space, we pre-train a VAE and apply Flow Matching in the latent space (shape: (3, 16, 16) -> (8, 4, 4)). The UNet predicts velocity fields over compact latent vectors instead of raw pixels, making training more efficient while capturing higher-level structure.  
+Instead of working in pixel space, we pre-train a VAE and apply Flow Matching in its latent space ((3, 16, 16) -> (8, 4, 4)). The UNet predicts velocity fields over compact latent vectors rather than raw pixels, making training more efficient while capturing higher-level structure.  
   
 <br>  
 
@@ -51,7 +51,7 @@ Rather than working in pixel space, we pre-train a VAE and apply Flow Matching i
 <br>  
 
 ## Latent Flow Matching + VQ-VAE  
-What if we replace the continuous VAE with a discrete VQ-VAE. The codebook indices are discrete, but the codebook vectors themselves live in continuous R^D space so Flow Matching still works. We train on pre-quantization outputs (z_e) for smooth optimization, then re-quantize before decoding.  
+We replace the continuous VAE with a discrete VQ-VAE. Since the codebook vectors are continuous in R^D, Flow Matching still applies. We train on pre-quantization outputs (z_e) for smooth gradients, then re-quantize before decoding.  
 
 <br>
   
@@ -64,7 +64,7 @@ What if we replace the continuous VAE with a discrete VQ-VAE. The codebook indic
 <br>  
 
 ## Latent Flow Matching Enhanced
-To achieve more perfect reconstruction quality, Let's improve upon the previous Latent Flow Matching. We changed the latent space from (8, 4, 4) to (16, 4, 4), and the ResBlock and SelfAttention, with the loss being MSE + L1. The UNet part has also been improved.
+To improve reconstruction quality, we expanded the latent space from (8, 4, 4) to (16, 4, 4), added ResBlock and Self-Attention modules, and used MSE + L1 loss. The UNet was also improved. 
 
 <br>  
 
