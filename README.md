@@ -7,6 +7,7 @@ There are currently four versions available. You can view them as ipynb files, a
 - Flow Matching Enhanced
 - Latent Flow Matching
 - Latent Flow Matching + VQ-VAE
+- Latent Flow Matching Enhanced
 
 <br> 
 
@@ -59,3 +60,16 @@ What if we replace the continuous VAE with a discrete VQ-VAE. The codebook indic
 
 ### Denoising
 <img src="assets/denoising3.gif" alt="Denoising Process" />
+
+<br>  
+
+## Latent Flow Matching Enhanced
+To achieve more perfect reconstruction quality, Let's improve upon the previous Latent Flow Matching. We changed the latent space from (8, 4, 4) to (16, 4, 4), and the ResBlock and SelfAttention, with the loss being MSE + L1. The UNet part has also been improved.
+
+<br>  
+
+### Result  
+<img src="assets/real_vs_generated4.png" alt="Real vs Generated" />  
+
+### Denoising
+<img src="assets/denoising4.gif" alt="Denoising Process" />
